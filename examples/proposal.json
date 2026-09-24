@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "intent": "Remove the redundant client allow rule without changing allowed or denied probes.",
+  "baseline_digest": "dbed43531603d98078582d81323ad7b3f40de076af3db35f9ee0fc940681ffb7",
+  "remove_rule_ids": [
+    "allow-clients-duplicate"
+  ]
+}
