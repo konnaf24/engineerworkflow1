@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "probes": [
+    {
+      "id": "client-allowed",
+      "src": "192.0.2.10",
+      "dst": "198.51.100.20",
+      "expected": "allow"
+    },
+    {
+      "id": "admin-denied-first",
+      "src": "192.0.2.140",
+      "dst": "198.51.100.20",
+      "expected": "deny"
+    },
+    {
+      "id": "unmatched-source-denied",
+      "src": "203.0.113.10",
+      "dst": "198.51.100.20",
+      "expected": "deny"
+    },
+    {
+      "id": "unmatched-destination-denied",
+      "src": "192.0.2.10",
+      "dst": "203.0.113.20",
+      "expected": "deny"
+    }
+  ]
+}
